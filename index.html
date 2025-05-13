@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria AW Cardápio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        /* Seu código CSS permanece o mesmo */
+    </style>
+</head>
+<body>
+    <header>
+         <img src="logoaw.png" alt="Logo Pizzaria AW" class="logo">
+        <h1>Pizzaria AW</h1>
+        <nav>
+            <ul>
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fas fa-info-circle"></i> Sobre nós</a></li>
+                <li><a href="#menu"><i class="fas fa-pizza-slice"></i> Cardápio</a></li>
+                <li><a href="#promocoes"><i class="fas fa-tags"></i> Promoções</a></li>
+                <li><a href="#depoimentos"><i class="fas fa-comment-dots"></i> Depoimentos</a></li>
+                <li><a href="#galeria"><i class="fas fa-images"></i> Galeria</a></li>
+                <li><a href="#contact"><i class="fas fa-phone"></i> Contato</a></li>
+            </ul>
+        </nav>
+        <button onclick="document.body.classList.toggle('dark-mode')">Modo Escuro/Claro</button>
+    </header>
+
+    <main id="home">
+        <section id="about">
+            <h2>Sobre nós</h2>
+            <p>Bem-vindo à Pizzaria AW! Oferecemos as melhores pizzas da cidade, feitas com ingredientes frescos e de alta qualidade.</p>
+        </section>
+
+        <section id="promocoes">
+            <h2>Promoções</h2>
+            <ul>
+                <li>Pizza Grande de Calabresa + Refrigerante 2L - R$ 42,00</li>                
+                <li>Pizza Doce  Prestígio Media grátis na compra de 2 Pizzas Grande Salgadas</li>
+            </ul>
+        </section>
+
+        <section id="pizzas-salgadas">
+    <h2>Pizzas Salgadas</h2>
+    <ul>
+        <li>
+            <div class="pizza" data-sabor="Calabresa" data-categoria="salgada" data-valor-media="25.00" data-valor-grande="35.00">
+                Pizza de Calabresa - Média: R$25.00 / Grande: R$35.00
+            </div>
+        </li>
+        <li>
+            <div class="pizza" data-sabor="Margherita" data-categoria="salgada" data-valor-media="30.00" data-valor-grande="40.00">
+                Pizza Margherita - Média: R$30.00 / Grande: R$40.00
+            </div>
+        </li>
+        <li>
+            <div class="pizza" data-sabor="Frango com Catupiry" data-categoria="salgada" data-valor-media="40.00" data-valor-grande="50.00">
+                Pizza de Frango com Catupiry - Média: R$40.00 / Grande: R$50.00
+            </div>
+        </li>
+        <li>
+            <div class="pizza" data-sabor="Portuguesa" data-categoria="salgada" data-valor-media="42.00" data-valor-grande="52.00">
+                Pizza Portuguesa - Média: R$42.00 / Grande: R$52.00
+            </div>
+            </li>
+        <li>
+            <div class="pizza" data-sabor="Quatro Queijos" data-categoria="salgada" data-valor-media="35.00" data-valor-grande="45.00">
+                Pizza Quatro Queijos - Média: R$35.00 / Grande: R$45.00
+            </div>
+            </li>
+        <li>
+            <div class="pizza" data-sabor="Pepperoni" data-categoria="salgada" data-valor-media="38.00" data-valor-grande="48.00">
+                Pizza Pepperoni - Média: R$38.00 / Grande: R$48.00
+            </div>
+            </li>
+        <li>
+            <div class="pizza" data-sabor="Atum" data-categoria="salgada" data-valor-media="36.00" data-valor-grande="46.00">
+                Pizza Atum - Média: R$36.00 / Grande: R$46.00
+            </div>
+            </li>
+        <li>
+            <div class="pizza" data-sabor="Palmito" data-categoria="salgada" data-valor-media="34.00" data-valor-grande="44.00">
+                Pizza Palmito - Média: R$34.00 / Grande: R$44.00
+            </div>
+            </li>
+        <li>
+            <div class="pizza" data-sabor="Rúcula" data-categoria="salgada" data-valor-media="45.00" data-valor-grande="55.00">
+                Pizza Vegetariana - Média: R$45.00 / Grande: R$55.00
+            </div>
+            </li>
+        <li>
+            <div class="pizza" data-sabor="Escarola" data-categoria="salgada" data-valor-media="40.00" data-valor-grande="50.00">
+                Pizza Vegetariana - Média: R$40.00 / Grande: R$50.00
+            </div>
+            </li>        <!-- Continue com os demais sabores usando esse mesmo formato -->
+    </ul>
+</section>    
+ 
+
+<section id="pizzas-doces">
+    <h2>Pizzas Doces</h2>
+    <ul>
+        <li>
+            <div class="pizza" data-sabor="Chocolate" data-categoria="doce" data-valor-media="44.00" data-valor-grande="54.00">
+                Pizza de Chocolate - Média: R$44.00 / Grande: R$54.00
+            </div>
+        </li>
+        <li>
+            <div class="pizza" data-sabor="Banana com canela " data-categoria="doce" data-valor-media="36.00" data-valor-grande="46.00">
+                Pizza Banana com canela - Média: R$36.00 / Grande: R$46.00
+            </div>
+        </li>
+        <li>
+            <div class="pizza" data-sabor="Morango com Chocolate" data-categoria="doce" data-valor-media="45.00" data-valor-grande="55.00">
+               Morango com Chocolate - Média: R$45.00 / Grande: R$55.00
+            </div>
+        </li>
+        <li>
+            <div class="pizza" data-sabor="Nutella com Morango" data-categoria="doce" data-valor-media="50.00" data-valor-grande="60.00">
+                Pizza Nutella com Morango" - Média: R$50.00 / Grande: R$60.00
+            </div>
+        </li>
+        <li>
+            <div class="pizza" data-sabor="Doce de Leite" data-categoria="doce" data-valor-media="42.00" data-valor-grande="52.00">
+                Pizza Doce de Leite" - Média: R$42.00 / Grande: R$52.00
+            </div>
+            </li>
+            <li>
+            <div class="pizza" data-sabor="Abacaxi com canela" data-categoria="doce" data-valor-media="38.00" data-valor-grande="48.00">
+               Abacaxi com canela" - Média: R$38.00 / Grande: R$48.00
+            </div>
+        </li>
+        <li>
+            <div class="pizza" data-sabor="Prestígio" data-categoria="doce" data-valor-media="40.00" data-valor-grande="50.00">
+                Pizza Prestígio" - Média: R$40.00 / Grande: R$50.00
+            </div>
+        </li>
+        <li>
+            <div class="pizza" data-sabor="Banana" data-categoria="doce" data-valor-media="35.00" data-valor-grande="45.00">
+                Pizza Banana" - Média: R$35.00/ Grande: R$45.00
+            </div>
+            </li>
+        <!-- Continue com os demais sabores doces da mesma forma -->
+    </ul>
+</section>
+
+
+
+        <!-- Seção de Bebidas antes da "Monte sua Pizza" -->
+        <section id="bebidas">
+    <h2>Bebidas</h2>
+    <ul>
+        <li>Refrigerante Lata - R$ 5,00 <button onclick="adicionarItemPedido('Refrigerante Lata', 5.00)">Adicionar</button></li>
+        <li>Refrigerante 2L - R$ 10,00 <button onclick="adicionarItemPedido('Refrigerante 2L', 10.00)">Adicionar</button></li>
+        <li>Suco de Laranja - R$ 6,00 <button onclick="adicionarItemPedido('Suco de Laranja', 6.00)">Adicionar</button></li>
+        <li>Suco de Limão - R$ 6,00 <button onclick="adicionarItemPedido('Suco de Limão', 6.00)">Adicionar</button></li>
+        <li>Suco de Uva - R$ 7,00 <button onclick="adicionarItemPedido('Suco de Uva', 7.00)">Adicionar</button></li>
+        <li>Água Mineral - R$ 3,00 <button onclick="adicionarItemPedido('Água Mineral', 3.00)">Adicionar</button></li>
+        <li>Cerveja Lata - R$ 8,00 <button onclick="adicionarItemPedido('Cerveja Lata', 8.00)">Adicionar</button></li>
+
+            </ul>
+        </section>
+
+        <!-- Seção de Sobremesas antes da "Monte sua Pizza" -->
+        <section id="sobremesas">
+    <h2>Sobremesas</h2>
+    <ul>
+        <li>Brownie - R$ 10,00 <button onclick="adicionarItemPedido('Brownie', 10.00)">Adicionar</button></li>
+        <li>Petit Gateau - R$ 12,00 <button onclick="adicionarItemPedido('Petit Gateau', 12.00)">Adicionar</button></li>
+        <li>Torta de Limão - R$ 8,00 <button onclick="adicionarItemPedido('Torta de Limão', 8.00)">Adicionar</button></li>
+        <li>Torta de Morango - R$ 10,00 <button onclick="adicionarItemPedido('Torta de Morango', 10.00)">Adicionar</button></li>
+        <li>Salgada de Fruta - R$8,00 <button onclick="adicionarItemPedido('Salgada de Fruta', 8.00)">Adicionar</button></li>
+        <li>Gelato - R$ 10,00 <button onclick="adicionarItemPedido('Gelato', 10.00)">Adicionar</button></li> 
+
+        
+
+            
+            </ul>
+        </section>
+
+        <!-- Seção de "Monte sua Pizza" -->
+       <section id="monte-pizza" class="secao-cardapio">
+    <h2>Monte sua Pizza</h2>
+    <form id="formPizza">
+        <label for="categoriaPizza">Categoria:</label>
+        <select id="categoriaPizza" name="categoriaPizza" onchange="atualizarSabores()">
+            <option value="salgada">Salgada</option>
+            <option value="doce">Doce</option>
+        </select>
+
+        <label for="tipoPizza">Tipo:</label>
+        <select id="tipoPizza" name="tipoPizza" onchange="atualizarTipoPizza()">
+            <option value="inteira">Inteira</option>
+            <option value="meio">Meio a Meio</option>
+        </select>
+
+        <label for="sabor1">Sabor 1:</label>
+        <select id="sabor1" name="sabor1"></select>
+
+        <label for="sabor2" id="sabor2Label" style="display:none;">Sabor 2:</label>
+        <select id="sabor2" name="sabor2" style="display:none;"></select>
+
+        <label for="tamanhoPizza">Tamanho:</label>
+<select id="tamanhoPizza" name="tamanhoPizza"> 
+    <option value="Média">Média</option>
+    <option value="Grande">Grande</option>
+</select>
+
+
+        <button type="button" onclick="adicionarItem()">Adicionar ao Pedido</button>
+    </form>
+
+    <h3>Pedido</h3>
+    <ul id="listaPedido"></ul>    
+<p id="totalPedido"><strong>Total:</strong> R$ 0.00</p>
+
+    <label for="formaPagamento">Forma de Pagamento:</label>
+    <select id="formaPagamento">
+        <option value="Crédito">Cartão de Crédito</option>
+        <option value="Débito">Cartão de Débito</option>
+        <option value="Refeição">Vale Refeição</option>
+    </select>
+
+    <div style="margin-top: 10px;">
+        <button onclick="finalizarPedido()">Finalizar Pedido</button>
+        <button onclick="limparPedido()">Limpar Pedido</button>
+    </div>
+</section>
+
+
+        <section id="depoimentos">
+            <h2>O que dizem nossos clientes</h2>
+            <blockquote>"Pizza deliciosa e entrega super rápida!" – João S.</blockquote>
+            <blockquote>"Melhor pizzaria da região, recomendo muito." – Ana P.</blockquote>
+            <blockquote>"A pizza de chocolate é a melhor que já comi!" – Carlos M.</blockquote>
+            <blockquote>"Ótimo atendimento e preços justos." – Maria F.</blockquote>
+            <blockquote>"Amo a pizza de calabresa, sempre quentinha!" – Lucas R.</blockquote>
+        </section>
+
+        <section id="galeria">
+            <h2>Galeria</h2>
+            <img src="marguerita.png" alt="Pizza Margherita">
+            <img src="calabresa.png" alt="Pizza de Calabresa">
+            <img src="chocolate com morango.png" alt="Pizza de Chocolate">
+        </section>
+
+        <section id="contact">
+            <h2>Contato</h2>
+            <p>Para fazer um pedido, entre em contato conosco pelo telefone (11) 1234-5678</p>
+            <p>Ou visite-nos na Rua das Flores, 123 - São Paulo, SP</p>
+            <p>Horário de funcionamento: Segunda a Domingo, das 18h às 23h</p>
+            <a href="https://wa.me/551112345678" target="_blank" class="whatsapp-button">
+                <i class="fab fa-whatsapp"></i> Faça seu pedido via WhatsApp
+            </a>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

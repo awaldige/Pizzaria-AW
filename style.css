@@ -1,0 +1,250 @@
+/* Resetando o estilo padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo e Fontes */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d9534f;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-mode header {
+    background-color: #d9534f;
+}
+
+/* Main Sections */
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+/* Cardápio */
+#menu ul {
+    list-style: none;
+}
+
+#menu ul li {
+    margin-bottom: 10px;
+}
+
+/* Monte sua pizza */
+#monte-pizza form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#monte-pizza select,
+#monte-pizza button {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* Pedido */
+#listaPedido {
+    list-style: none;
+    margin-top: 20px;
+}
+
+#listaPedido li {
+    margin-bottom: 5px;
+}
+
+/* Galeria */
+#galeria img {
+    width: 30%;
+    margin: 10px;
+}
+
+/* Contato */
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25d366;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.whatsapp-button i {
+    margin-right: 10px;
+}
+
+.whatsapp-button:hover {
+    background-color: #128c7e;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #galeria img {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+/* Layout moderno para Bebidas e Sobremesas */
+#bebidas ul,
+#sobremesas ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    padding: 0;
+}
+
+#bebidas li,
+#sobremesas li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+body.dark-mode #bebidas li,
+body.dark-mode #sobremesas li {
+    background-color: #444;
+    color: #f9f9f9;
+    border-color: #666;
+}
+
+/* Botão dentro dos cards */
+#bebidas li button,
+#sobremesas li button {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+#bebidas li button:hover,
+#sobremesas li button:hover {
+    background-color: #d9534f;
+}
+
+/* Layout moderno para Pizzas Salgadas e Pizzas Doces */
+#pizzas-salgadas ul,
+#pizzas-doces ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    padding: 0;
+}
+
+#pizzas-salgadas li,
+#pizzas-doces li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+body.dark-mode #pizzas-salgadas li,
+body.dark-mode #pizzas-doces li {
+    background-color: #444;
+    color: #f9f9f9;
+    border-color: #666;
+}
+
+/* Botão dentro dos cards de Pizza */
+#pizzas-salgadas li button,
+#pizzas-doces li button {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+#pizzas-salgadas li button:hover,
+#pizzas-doces li button:hover {
+    background-color: #d9534f;
+}
+
+
+
+
+
+
+
+
+
